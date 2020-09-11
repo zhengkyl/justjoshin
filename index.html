@@ -13,32 +13,99 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide-core.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="main">
-      <div id="name-div">
-        <button id="button">
-        <svg
-          id="play"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 14.6 16.9"
-        >
-          <path d="M0 0l14.6 8.4L0 17z" fill="#fff" />
-        </svg>
-      </button>
-        <div class="words">
-          <h1>Josh McAtee</h1>
-          <h2>WHAT'S POPPIN?</h2>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="name-div right splide__autoplay">
+                <button id="button" class="splide__play">
+                  <svg
+                    id="play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 14.6 16.9"
+                  >
+                    <path d="M0 0l14.6 8.4L0 17z" fill="#fff" />
+                  </svg>
+                </button>
+                <div class="words1">
+                  <h1>Josh McAtee</h1>
+                  <h2>WHAT'S POPPIN?</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="coldwar.jpg" />
+                <div class="words">
+                  <h2>Served on the frontlines of the Cold War</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="crosswalk.jpg" />
+                <div class="words">
+                  <h2>Helps children cross roads</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="grow.jpg" />
+                <div class="words">
+                  <h2>Great with plants!</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="hiding2.jpg" />
+                <div class="words">
+                  <h2>Josh is really good at hiding</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="propose.jpg" />
+                <div class="words">
+                  <h2>Josh McAtee respects women</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="volunteer.jpg" />
+                <div class="words">
+                  <h2>Volunteers to help the needy</h2>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="name-div center">
+                <img src="josh.gif" />
+                <div class="words">
+                  <h2>Vote for Josh McAtee</h2>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-
-      
     </div>
 
     <audio loop id="audio">
       <source src="justjoshing.mp3" />
     </audio>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
