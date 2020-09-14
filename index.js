@@ -1,6 +1,8 @@
 const audioPlayer = document.getElementById("audio");
+const audioPlayer2 = document.getElementById("audio2");
 const button = document.getElementById("button");
 const main = document.getElementsByClassName("main")[0];
+let currentSlideIndex = 0;
 
 const splide = new Splide( '.splide' , {
   type:"loop",
@@ -28,6 +30,14 @@ button.addEventListener("click", () => {
 function go(){
   setTimeout(()=>go(),3000);
   splide.go('+1');
+  currentSlideIndex++;
+  if (currentSlideIndex == 8) {
+    currentSlideIndex = -1;
+    audioPlayer.pause();
+    audioPlayer2.play();
+  }else if(currentSlideIndex ==0) {
+    audioPlayer.play();
+  }
 }
 
 
